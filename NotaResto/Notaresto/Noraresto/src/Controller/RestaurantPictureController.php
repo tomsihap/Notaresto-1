@@ -29,21 +29,21 @@ class RestaurantPictureController extends AbstractController
 
     }
     /**
-     * @Route("/delete/{id}",name="restaurant_picture_delete",methods="DELETE")
+     * @Route("/delete/{id}",name="restaurant_picture_delete",methods={"DELETE"})
      */
     public function delete(RestaurantPicture $restaurantPicture, Request $request)
     {
 
     }
     /**
-     * @Route("/edit/{id}",name="restaurant_picture_edit",methods"GET","POST")
+     * @Route("/edit/{id}",name="restaurant_picture_edit",methods={"GET","POST"})
      */
     public function edit(RestaurantPicture $restaurantPicture, Request $request)
     {
 
     }
     /**
-     * @Route("/new",name="restaurant_picture_new",methods="GET","POST")
+     * @Route("/new",name="restaurant_picture_new",methods={"GET","POST"})
      */
     public function new(Request $request)
     {

@@ -23,15 +23,9 @@ class Restaurant
      */
     private $name;
 
-    /**
-     * @ORM\Column(type="integer")
-     */
-    private $user_id;
+    
 
-    /**
-     * @ORM\Column(type="integer")
-     */
-    private $city_id;
+   
 
     /**
      * @ORM\Column(type="text")
@@ -83,29 +77,11 @@ class Restaurant
         return $this;
     }
 
-    public function getUserId(): ?int
-    {
-        return $this->user_id;
-    }
+    
 
-    public function setUserId(int $user_id): self
-    {
-        $this->user_id = $user_id;
+    
 
-        return $this;
-    }
-
-    public function getCityId(): ?int
-    {
-        return $this->city_id;
-    }
-
-    public function setCityId(int $city_id): self
-    {
-        $this->city_id = $city_id;
-
-        return $this;
-    }
+    
 
     public function getDescription(): ?string
     {

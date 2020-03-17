@@ -28,7 +28,7 @@ class ReviewController extends AbstractController
 
     }
     /**
-     * @Route("/show/{id}",name="review_edit",method={"GET","POST"})
+     * @Route("/show/{id}",name="review_edit",methods={"GET","POST"})
      */
     public function edit(Review $review, Request $request)
     {

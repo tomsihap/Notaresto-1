@@ -64,7 +64,7 @@ class AdressController extends AbstractController
         $this->redirectToRoute('adress');
     }
     /**
-     * @Route('/edit/{id},name="adress/edit",methods={"GET,POST"})
+     * @Route("/edit/{id}",name="adress_edit",methods={"GET","POST"})
      */
     public function edit(Adress $adress, Request $request) : Response
     {

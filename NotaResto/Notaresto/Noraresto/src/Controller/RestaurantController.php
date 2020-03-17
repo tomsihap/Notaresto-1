@@ -35,14 +35,14 @@ class RestaurantController extends AbstractController
 
     }
     /**
-     * @Route("/delete/{id}",name="restaurant_delete",methods="DELETE")
+     * @Route("/delete/{id}",name="restaurant_delete",methods={"DELETE"})
      */
     public function delete()
     {
 
     } 
     /**
-     * @Route("/edit/{id}",name="restaurant_edit",methods="GET","POST")
+     * @Route("/edit/{id}",name="restaurant_edit",methods={"GET","POST"})
      */
     public function edit()
     {
